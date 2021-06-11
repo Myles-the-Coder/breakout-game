@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #63a4ff;
+  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  border: .5rem;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: 0;
+  border: 0;
+}
+
+.btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.btn:active {
+  outline: 0;
+  box-shadow: 0;
+  border: 0;
+  transform: scale(.98);
+}
+
+.rules-btn {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.rules {
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: #222;
+  color: #fff;
+  font-size: 1.6rem;
+  max-width: 35rem;
+  min-height: 100%;
+  line-height: 1.5;
+  text-align: center;
+  transform: translateX(-100%);
+  transition: transform .7s ease-in-out;
+}
+
+.rules h2 {
+  margin: 2rem 1rem;
+}
+
+.rules p {
+  margin: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  padding: 1rem 1.5rem;
+  left: 1rem;
+  top: 1rem;
+  font-size: 1.7rem;
+  color: #000;
+  background-color: #fff;
+}
+
+.close-btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.rules.show {
+  transform: translateX(0%);
+}
+
+canvas {
+  background-color: #f0f0f0;
+  display: block;
+  border-radius: .5rem;
+}
